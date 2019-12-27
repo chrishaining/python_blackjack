@@ -50,10 +50,16 @@ class Deck:
             # return "{} of {}".format(card_details.rank, card_details.suit)
             return "{} of {}".format(rank_value, suit_value)
 
+        def show_cards(self):
+            for card in self.cards:
+                 return card.show_card_details()
+
 deck1 = Deck()
-print(deck1.cards)
+# print(deck1.cards)
 deck1.add_52_cards()
-print(deck1.cards)
+# print(deck1.cards)
+deck1.shuffle()
+
 print(deck1.show_card(0))
 # deck1.add_card({"Ace of Hearts"})
 # deck1.add_card({"Two of Hearts"})
@@ -67,3 +73,4 @@ print(deck1.count_cards())
 #If I run this multiple times, I expect the order to be different from the previous print
 # print(deck1.cards)
 #The add card method is not acting the way I expected. It works (adds one item) if I pass a list or dictionary as the argument, but if I pass a string it ads multiple items.
+print(deck1.show_cards())
