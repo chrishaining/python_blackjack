@@ -52,9 +52,10 @@ class Deck:
 
         def show_cards(self):
             for card in self.cards:
+                rank_name = card.rank.name
                 rank_value = card.rank.value
                 suit_value = card.suit.value
-                print("{} of {}".format(rank_value, suit_value))
+                print("{} of {}".format(rank_name, suit_value))
 
 
 deck1 = Deck()
@@ -77,3 +78,4 @@ print(deck1.count_cards())
 # print(deck1.cards)
 #The add card method is not acting the way I expected. It works (adds one item) if I pass a list or dictionary as the argument, but if I pass a string it ads multiple items.
 print(deck1.show_cards())
+# print(deck1.get_cards)
