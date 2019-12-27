@@ -52,7 +52,10 @@ class Deck:
 
         def show_cards(self):
             for card in self.cards:
-                 return card.show_card_details()
+                rank_value = card.rank.value
+                suit_value = card.suit.value
+                return "{} of {}".format(rank_value, suit_value)
+
 
 deck1 = Deck()
 # print(deck1.cards)
