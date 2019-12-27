@@ -8,6 +8,10 @@ class Card:
         return self.suit
 
     @property
+    def get_suit_value(self):
+        return self.rank.value
+
+    @property
     def get_rank(self):
         return self.rank
 
@@ -16,4 +20,6 @@ class Card:
 
 ###
 card1 = Card("Hearts", "Ace")
+# card1 = Card()
 print(card1.show_card_details())
+# print(card1.get_suit_value())
