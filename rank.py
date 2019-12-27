@@ -1,6 +1,4 @@
-from enum import Enum
-
-class Rank(Enum):
+class Rank:
     ACE = 1
     TWO = 2
     THREE = 3

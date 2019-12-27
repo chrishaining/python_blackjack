@@ -1,5 +1,5 @@
-from enum import Enum
-class Suit(Enum):
+class Suit:
+
     HEARTS = "HEARTS"
     DIAMONDS = "DIAMONDS"
     SPADES = "SPADES"
