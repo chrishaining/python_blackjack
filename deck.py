@@ -54,14 +54,14 @@ class Deck:
             for card in self.cards:
                 rank_value = card.rank.value
                 suit_value = card.suit.value
-                return "{} of {}".format(rank_value, suit_value)
+                print("{} of {}".format(rank_value, suit_value))
 
 
 deck1 = Deck()
 # print(deck1.cards)
 deck1.add_52_cards()
 # print(deck1.cards)
-deck1.shuffle()
+# deck1.shuffle()
 
 print(deck1.show_card(0))
 # deck1.add_card({"Ace of Hearts"})
